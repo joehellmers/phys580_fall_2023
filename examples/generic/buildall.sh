@@ -11,4 +11,6 @@ gfortran $OPTS -o fileout.f.exe fileout.f90
 
 gfortran $OPTS -o filein.f.exe filein.f90 
 
-gfortran $OPTS -o precisionstuff.f.exe precisionstuff.f90 
+gfortran $OPTS -o precisionstuff.f.exe precisionstuff.f90
+
+gfortran $OPTS -o ifelsestuff.f.exe ifelsestuff.f90 

@@ -16,6 +16,6 @@ program getstring
     write(*,*) "You entered '", trim(filename), "'"
 
     ! Question: What do you think happens if you enter a file name longer that the 
-    !           maxfilenamesize
+    !           maxfilenamesize?
 
 end program getstring
