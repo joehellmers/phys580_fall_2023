@@ -6,3 +6,5 @@ gfortran -Wall -o xlubksb xlubksb.f90 nr.o nrutil.o nrtype.o ludcmp.o lubksb.o
 gfortran -Wall -o xsvdcmp xsvdcmp.f90 nr.o nrutil.o nrtype.o pythag.o svdcmp.o
 gfortran -Wall -o xsvbksb xsvbksb.f90 nr.o nrutil.o nrtype.o pythag.o svdcmp.o svbksb.o
 
+g++  -Wall -c ludcmp.cpp lubksb.cpp svdcmp.cpp pythag.cpp svbksb.cpp
+g++  -Wall -o xludcmp ludcmp.o xludcmp.cpp
