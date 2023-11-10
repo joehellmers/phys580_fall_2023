@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --job-name="wave_mpi_np1_hellmers"
-#SBATCH --output="wave_mpi_np1.out"
+#SBATCH --output="wave_mpi_np2.out"
 #SBATCH --partition=shared
-#SBATCH --nodes=1
+#SBATCH --nodes=2
 #SBATCH --ntasks-per-node=1
 #SBATCH --account=TG-PHY230001
 #SBATCH --export=ALL
@@ -12,6 +12,6 @@ date
 module load cpu/0.15.4
 module load gcc/9.2.0
 module load openmpi/4.1.1
-./wave_mpi -np 1
+./wave_mpi -np 1  
 
 date
