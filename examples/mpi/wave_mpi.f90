@@ -208,7 +208,6 @@ subroutine update ( id, p, n_global, n_local, nsteps, dt, u1_local )
   integer ( kind = 4 ) i_local_hi
   integer ( kind = 4 ) i_local_lo
   integer ( kind = 4 ) id
-  integer ( kind = 4 ) j
   integer ( kind = 4 ), parameter :: ltor = 20
   integer ( kind = 4 ) n_global
   integer ( kind = 4 ) nsteps
@@ -394,7 +393,6 @@ subroutine collect ( id, p, n_global, n_local, nsteps, dt, u_local )
   integer ( kind = 4 ) i_local_hi
   integer ( kind = 4 ) i_local_lo
   integer ( kind = 4 ) id
-  integer ( kind = 4 ) j
   integer ( kind = 4 ) n_local2
   integer ( kind = 4 ) nsteps
   integer ( kind = 4 ) p

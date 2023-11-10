@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name="wave_mpi_np1_hellmers"
+#SBATCH --job-name="wave_mpi_phys580"
 #SBATCH --output="wave_mpi_np1.out"
 #SBATCH --partition=shared
 #SBATCH --nodes=1
@@ -12,6 +12,6 @@ date
 module load cpu/0.15.4
 module load gcc/9.2.0
 module load openmpi/4.1.1
-./wave_mpi -np 1
-
+mpirun -np 1 ./wave_mpi > wave_mpi.np1.txt
+echo "Compute Node: $SLURM_JOB_NODELIST" >> wave_mpi.np1.txt
 date
